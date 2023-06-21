@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/09/01 08:02:05.000.804,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/08 08:14:19.000.607,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/01/29 08:19:42.000.977,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/15 16:17:05.000.920,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/06/21 14:22:05.484,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/06/21 14:24:55.984,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/21 14:29:35.894,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\HalamanUtama.pas=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/06/21 14:29:35.894,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\HalamanUtama.dfm=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/06/21 14:29:52.952,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Kelas.dfm=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2023/06/21 14:29:52.952,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Kelas.pas=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/21 14:29:58.075,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Sekolah.dproj=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
