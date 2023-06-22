@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, ZAbstractConnection,
-  ZConnection;
+  ZConnection, Vcl.StdCtrls;
 
 type
   TForm1 = class(TForm)
@@ -18,7 +18,10 @@ type
     WaliKelas1: TMenuItem;
     Kelas1: TMenuItem;
     ZConnection1: TZConnection;
+    Label1: TLabel;
     procedure Kelas1Click(Sender: TObject);
+    procedure Siswa1Click(Sender: TObject);
+    procedure WaliKelas1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,11 +35,21 @@ implementation
 
 {$R *.dfm}
 
-uses Kelas;
+uses Kelas, Siswa, WaliKelas;
 
 procedure TForm1.Kelas1Click(Sender: TObject);
 begin
 Form2.Show;
+end;
+
+procedure TForm1.Siswa1Click(Sender: TObject);
+begin
+Form3.Show;
+end;
+
+procedure TForm1.WaliKelas1Click(Sender: TObject);
+begin
+Form4.Show;
 end;
 
 end.
