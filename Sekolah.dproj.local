@@ -7,16 +7,22 @@
     <Transaction>2022/03/15 16:17:05.000.920,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2023/06/21 14:22:05.000.484,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2023/06/21 14:24:55.000.984,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2023/06/21 14:29:35.000.894,C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\HalamanUtama.dfm</Transaction>
     <Transaction>2023/06/21 14:29:35.000.894,C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\HalamanUtama.pas</Transaction>
+    <Transaction>2023/06/21 14:29:35.000.894,C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\HalamanUtama.dfm</Transaction>
     <Transaction>2023/06/21 14:29:52.000.952,C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit2.pas=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Kelas.pas</Transaction>
     <Transaction>2023/06/21 14:29:52.000.952,C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit2.dfm=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Kelas.dfm</Transaction>
     <Transaction>2023/06/21 14:29:58.000.075,C:\Users\USER\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Sekolah.dproj</Transaction>
-    <Transaction>2023/06/22 11:10:01.779,=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit3.pas</Transaction>
-    <Transaction>2023/06/22 11:19:06.384,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Siswa.dfm=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit3.dfm</Transaction>
-    <Transaction>2023/06/22 11:19:06.384,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Siswa.pas=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit3.pas</Transaction>
-    <Transaction>2023/06/22 12:07:29.346,=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit4.pas</Transaction>
-    <Transaction>2023/06/22 12:08:26.826,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\WaliKelas.pas=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit4.pas</Transaction>
-    <Transaction>2023/06/22 12:08:26.826,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\WaliKelas.dfm=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit4.dfm</Transaction>
+    <Transaction>2023/06/22 11:10:01.000.779,=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit3.pas</Transaction>
+    <Transaction>2023/06/22 11:19:06.000.384,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Siswa.dfm=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit3.dfm</Transaction>
+    <Transaction>2023/06/22 11:19:06.000.384,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Siswa.pas=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit3.pas</Transaction>
+    <Transaction>2023/06/22 12:07:29.000.346,=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit4.pas</Transaction>
+    <Transaction>2023/06/22 12:08:26.000.826,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\WaliKelas.pas=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit4.pas</Transaction>
+    <Transaction>2023/06/22 12:08:26.000.826,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\WaliKelas.dfm=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit4.dfm</Transaction>
+    <Transaction>2023/06/25 09:29:36.000.631,=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit5.pas</Transaction>
+    <Transaction>2023/06/25 09:54:07.000.337,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit5.pas=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\LaporanKelas.pas</Transaction>
+    <Transaction>2023/06/25 09:54:07.000.337,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit5.dfm=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\LaporanKelas.dfm</Transaction>
+    <Transaction>2023/06/25 11:28:17.827,=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit6.pas</Transaction>
+    <Transaction>2023/06/25 11:32:56.913,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\LaporanWaliKelas.pas=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit6.pas</Transaction>
+    <Transaction>2023/06/25 11:32:56.913,D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\LaporanWaliKelas.dfm=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Sekolah\Unit6.dfm</Transaction>
   </Transactions>
 </BorlandProject>

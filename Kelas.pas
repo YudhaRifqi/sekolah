@@ -22,6 +22,7 @@ type
     DBGrid1: TDBGrid;
     ZQuery1: TZQuery;
     DataSource1: TDataSource;
+    BitBtn6: TBitBtn;
     procedure editbersih;
     procedure editenable;
     procedure posisiawal;
@@ -32,6 +33,7 @@ type
     procedure FormShow(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
     procedure BitBtn1Click(Sender: TObject);
+    procedure BitBtn6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -47,7 +49,7 @@ implementation
 
 {$R *.dfm}
 
-uses HalamanUtama;
+uses HalamanUtama, LaporanKelas;
 
 { TForm2 }
 
@@ -55,7 +57,7 @@ uses HalamanUtama;
 
 procedure TForm2.BitBtn1Click(Sender: TObject);
 begin
-editbersih;
+       editbersih;
        editenable;
        BitBtn1.Enabled := false;
        BitBtn2.Enabled := true;
@@ -114,15 +116,31 @@ end;
 
 procedure TForm2.BitBtn4Click(Sender: TObject);
 begin
-if ZQuery1.RecordCount <=0 then
-MessageDlg('data tidak ada', mtWarning, [mbOK], 0) else
-if MessageDlg('Yakin ingin menghapus data?', mtConfirmation, [mbYes, mbNo], 0)=mryes then
-ZQuery1.Delete;
+if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
+begin
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add(' delete from kelas where id="'+id+'"');
+ZQuery1. ExecSQL;
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('select * from kelas');
+ZQuery1.Open;
+ShowMessage('DATA BERHASIL DIHAPUS');
+posisiawal;
+end else
+begin
+ShowMessage('DATA BATAL DIHAPUS');
+posisiawal;
+end;
 end;
 
 procedure TForm2.BitBtn5Click(Sender: TObject);
 begin
 posisiawal;
+end;
+
+procedure TForm2.BitBtn6Click(Sender: TObject);
+begin
+Form5.QuickRep1.Preview;
 end;
 
 procedure TForm2.DBGrid1CellClick(Column: TColumn);
