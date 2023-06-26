@@ -7,7 +7,8 @@ uses
   Siswa in 'Siswa.pas' {Form3},
   WaliKelas in 'WaliKelas.pas' {Form4},
   LaporanKelas in 'LaporanKelas.pas' {Form5},
-  LaporanWaliKelas in 'LaporanWaliKelas.pas' {Form6};
+  LaporanWaliKelas in 'LaporanWaliKelas.pas' {Form6},
+  LaporanSiswa in 'LaporanSiswa.pas' {Form7};
 
 {$R *.res}
 
@@ -20,5 +21,6 @@ begin
   Application.CreateForm(TForm4, Form4);
   Application.CreateForm(TForm5, Form5);
   Application.CreateForm(TForm6, Form6);
+  Application.CreateForm(TForm7, Form7);
   Application.Run;
 end.

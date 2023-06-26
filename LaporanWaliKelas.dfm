@@ -15,8 +15,8 @@ object Form6: TForm6
   PixelsPerInch = 96
   TextHeight = 13
   object QuickRep1: TQuickRep
-    Left = 76
-    Top = 56
+    Left = 8
+    Top = 0
     Width = 1123
     Height = 794
     ShowingPreview = False
