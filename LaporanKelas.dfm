@@ -15,8 +15,8 @@ object Form5: TForm5
   PixelsPerInch = 96
   TextHeight = 13
   object QuickRep1: TQuickRep
-    Left = -86
-    Top = 8
+    Left = -48
+    Top = 32
     Width = 794
     Height = 1123
     ShowingPreview = False
@@ -239,13 +239,13 @@ object Form5: TForm5
       KeepOnOnePage = False
       BandType = rbDetail
       object QRDBText2: TQRDBText
-        Left = 298
+        Left = 303
         Top = 16
         Width = 40
         Height = 19
         Size.Values = (
           50.270833333333330000
-          788.458333333333300000
+          801.687500000000000000
           42.333333333333330000
           105.833333333333300000)
         XLColumn = 0
@@ -265,13 +265,13 @@ object Form5: TForm5
         FontSize = 12
       end
       object QRDBText3: TQRDBText
-        Left = 588
+        Left = 611
         Top = 16
         Width = 50
         Height = 19
         Size.Values = (
           50.270833333333330000
-          1555.750000000000000000
+          1616.604166666667000000
           42.333333333333330000
           132.291666666666700000)
         XLColumn = 0

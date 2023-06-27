@@ -19,9 +19,11 @@ type
     Kelas1: TMenuItem;
     ZConnection1: TZConnection;
     Label1: TLabel;
+    OrangTua1: TMenuItem;
     procedure Kelas1Click(Sender: TObject);
     procedure Siswa1Click(Sender: TObject);
     procedure WaliKelas1Click(Sender: TObject);
+    procedure OrangTua1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -35,11 +37,16 @@ implementation
 
 {$R *.dfm}
 
-uses Kelas, Siswa, WaliKelas;
+uses Kelas, Siswa, WaliKelas, OrangTua, LaporanOrangTua;
 
 procedure TForm1.Kelas1Click(Sender: TObject);
 begin
 Form2.Show;
+end;
+
+procedure TForm1.OrangTua1Click(Sender: TObject);
+begin
+Form8.Show;
 end;
 
 procedure TForm1.Siswa1Click(Sender: TObject);

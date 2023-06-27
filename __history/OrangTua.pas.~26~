@@ -1,0 +1,290 @@
+unit OrangTua;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.StdCtrls,
+  ZAbstractRODataset, ZAbstractDataset, ZDataset, Vcl.ExtCtrls, Vcl.Grids,
+  Vcl.DBGrids, Vcl.Buttons;
+
+type
+  TForm8 = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label6: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    BitBtn3: TBitBtn;
+    BitBtn4: TBitBtn;
+    BitBtn5: TBitBtn;
+    DBGrid1: TDBGrid;
+    RadioGroup1: TRadioGroup;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    BitBtn6: TBitBtn;
+    ZQuery1: TZQuery;
+    DataSource1: TDataSource;
+    ComboBox1: TComboBox;
+    Label9: TLabel;
+    ComboBox2: TComboBox;
+    ComboBox3: TComboBox;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    procedure BitBtn1Click(Sender: TObject);
+    procedure BitBtn5Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure BitBtn2Click(Sender: TObject);
+    procedure BitBtn3Click(Sender: TObject);
+    procedure BitBtn4Click(Sender: TObject);
+    procedure DBGrid1CellClick(Column: TColumn);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure editbersih;
+    procedure editenable;
+    procedure posisiawal;
+  end;
+
+var
+  Form8: TForm8;
+  id : string;
+
+implementation
+
+{$R *.dfm}
+
+{ TForm8 }
+
+procedure TForm8.BitBtn1Click(Sender: TObject);
+begin
+editbersih;
+       editenable;
+       BitBtn1.Enabled := false;
+       BitBtn2.Enabled := true;
+       BitBtn3.Enabled := false;
+       BitBtn4.Enabled := false;
+       BitBtn5.Enabled := true;
+end;
+
+procedure TForm8.BitBtn2Click(Sender: TObject);
+begin
+    if Edit1.Text = '' then
+    begin
+    MessageDlg('Kolom nik harus diisi', mtInformation, [mbOK], 0);
+    end else
+    if Edit2.Text = '' then
+    begin
+    MessageDlg('Kolom nama harus diisi', mtInformation, [mbOK], 0);
+    end else
+    if (RadioButton1.Checked=false) and (RadioButton2.Checked=false)then
+    begin
+    MessageDlg('Kolom jenis kelamin harus diisi', mtInformation, [mbOK], 0);
+    end else
+    if Edit3.Text = '' then
+    begin
+    MessageDlg('Kolom telepon harus diisi', mtInformation, [mbOK], 0);
+    end else
+    if Edit4.Text = '' then
+    begin
+    MessageDlg('Kolom alamat harus diisi', mtInformation, [mbOK], 0);
+    end else
+    if ComboBox1.text = '' then
+    begin
+    MessageDlg('Kolom agama harus diisi', mtInformation, [mbOK], 0);
+    end else
+    if ComboBox2.text = '' then
+    begin
+    MessageDlg('Kolom pendidikan harus diisi', mtInformation, [mbOK], 0);
+    end else
+    if ComboBox3.text = '' then
+    begin
+    MessageDlg('Kolom pekerjaan lahir harus diisi', mtInformation, [mbOK], 0);
+    end else
+    begin
+    ZQuery1.Append;
+    ZQuery1.FieldByName('nik').AsString := Edit1.Text;
+    ZQuery1.FieldByName('nama').AsString := Edit2.Text;
+    ZQuery1.FieldByName('telepon').AsString := Edit3.Text;
+    ZQuery1.FieldByName('alamat').AsString := Edit4.Text;
+    ZQuery1.FieldByName('agama').AsString := ComboBox1.Text;
+    ZQuery1.FieldByName('pendidikan').AsString := ComboBox2.Text;
+    ZQuery1.FieldByName('pekerjaan').AsString := ComboBox3.Text;
+    ZQuery1.FieldByName('is_active').AsString := 'true';
+    if RadioButton1.Checked = true then
+    ZQuery1.FieldByName('jk').AsString := RadioButton1.Caption;
+    if RadioButton2.Checked = true then
+    ZQuery1.FieldByName('jk').AsString := RadioButton2.Caption;
+    ZQuery1.Post;
+
+    ZQuery1.SQL.Clear;
+    ZQuery1.SQL.Add('select * from ortu');
+    ZQuery1.Open;
+    ShowMessage('DATA BERHASIL DISIMPAN');
+    posisiawal;
+    end;
+end;
+
+procedure TForm8.BitBtn3Click(Sender: TObject);
+begin
+    if Edit1.Text = '' then
+    begin
+    MessageDlg('Kolom nik harus diisi', mtInformation, [mbOK], 0);
+    end else
+    if Edit2.Text = '' then
+    begin
+    MessageDlg('Kolom nama harus diisi', mtInformation, [mbOK], 0);
+    end else
+    if (RadioButton1.Checked=false) and (RadioButton2.Checked=false)then
+    begin
+    MessageDlg('Kolom jenis kelamin harus diisi', mtInformation, [mbOK], 0);
+    end else
+    if Edit3.Text = '' then
+    begin
+    MessageDlg('Kolom telepon harus diisi', mtInformation, [mbOK], 0);
+    end else
+    if Edit4.Text = '' then
+    begin
+    MessageDlg('Kolom alamat harus diisi', mtInformation, [mbOK], 0);
+    end else
+    if ComboBox1.text = '' then
+    begin
+    MessageDlg('Kolom agama harus diisi', mtInformation, [mbOK], 0);
+    end else
+    if ComboBox2.text = '' then
+    begin
+    MessageDlg('Kolom pendidikan harus diisi', mtInformation, [mbOK], 0);
+    end else
+    if ComboBox3.text = '' then
+    begin
+    MessageDlg('Kolom pekerjaan lahir harus diisi', mtInformation, [mbOK], 0);
+    end else
+    begin
+    ZQuery1.Edit;
+    ZQuery1.FieldByName('nik').AsString := Edit1.Text;
+    ZQuery1.FieldByName('nama').AsString := Edit2.Text;
+    ZQuery1.FieldByName('telepon').AsString := Edit3.Text;
+    ZQuery1.FieldByName('alamat').AsString := Edit4.Text;
+    ZQuery1.FieldByName('agama').AsString := ComboBox1.Text;
+    ZQuery1.FieldByName('pendidikan').AsString := ComboBox2.Text;
+    ZQuery1.FieldByName('pekerjaan').AsString := ComboBox3.Text;
+    ZQuery1.FieldByName('is_active').AsString := 'true';
+    if RadioButton1.Checked = true then
+    ZQuery1.FieldByName('jk').AsString := RadioButton1.Caption;
+    if RadioButton2.Checked = true then
+    ZQuery1.FieldByName('jk').AsString := RadioButton2.Caption;
+    ZQuery1.Post;
+
+    ZQuery1.SQL.Clear;
+    ZQuery1.SQL.Add('select * from ortu');
+    ZQuery1.Open;
+    ShowMessage('DATA BERHASIL DIUBAH');
+    posisiawal;
+    end;
+end;
+
+procedure TForm8.BitBtn4Click(Sender: TObject);
+begin
+if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
+begin
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add(' delete from siswa where id="'+id+'"');
+ZQuery1. ExecSQL;
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('select * from ortu');
+ZQuery1.Open;
+ShowMessage('DATA BERHASIL DIHAPUS');
+posisiawal;
+end else
+begin
+ShowMessage('DATA BATAL DIHAPUS');
+posisiawal;
+end;
+end;
+
+procedure TForm8.BitBtn5Click(Sender: TObject);
+begin
+posisiawal;
+end;
+
+procedure TForm8.DBGrid1CellClick(Column: TColumn);
+begin
+editenable;
+BitBtn1.Enabled := true;
+BitBtn2.Enabled := false;
+BitBtn3.Enabled := true;
+BitBtn4.Enabled := true;
+BitBtn5.Enabled := true;
+id := ZQuery1.Fields[0].AsString;
+Edit1.Text := ZQuery1.FieldByName('nik').AsString;
+Edit2.Text := ZQuery1.FieldByName('nama').AsString;
+Edit3.Text := ZQuery1.FieldByName('telepon').AsString;
+Edit4.Text := ZQuery1.FieldByName('alamat').AsString;
+ComboBox1.Text := ZQuery1.FieldByName('agama').AsString;
+ComboBox2.Text := ZQuery1.FieldByName('pendidikan').AsString;
+ComboBox3.Text := ZQuery1.FieldByName('pekerjaan').AsString;
+if ZQuery1.FieldByName('jk').AsString = 'L' then
+RadioButton1.Checked := true;
+if ZQuery1.FieldByName('jk').AsString = 'P' then
+RadioButton2.Checked := true;
+end;
+
+procedure TForm8.editbersih;
+begin
+Edit1.Clear;
+Edit2.Clear;
+RadioButton1.Checked := false;
+RadioButton2.Checked := false;
+Edit3.Clear;
+Edit4.Clear;
+ComboBox1.Text := '';
+ComboBox2.Text := '';
+ComboBox3.Text := '';
+end;
+
+procedure TForm8.editenable;
+begin
+Edit1.Enabled := true;
+Edit2.Enabled := true;
+RadioButton1.Enabled := true;
+RadioButton2.Enabled := true;
+Edit3.Enabled := true;
+Edit4.Enabled := true;
+ComboBox1.Enabled := true;
+ComboBox2.Enabled := true;
+ComboBox3.Enabled := true;
+end;
+
+procedure TForm8.FormShow(Sender: TObject);
+begin
+posisiawal;
+end;
+
+procedure TForm8.posisiawal;
+begin
+editbersih;
+Edit1.Enabled := false;
+Edit2.Enabled := false;
+RadioButton1.Enabled := false;
+RadioButton2.Enabled := false;
+Edit3.Enabled := false;
+Edit4.Enabled := false;
+ComboBox1.Enabled := false;
+ComboBox2.Enabled := false;
+ComboBox3.Enabled := false;
+BitBtn1.Enabled := true;
+BitBtn2.Enabled := false;
+BitBtn3.Enabled := false;
+BitBtn4.Enabled := false;
+BitBtn5.Enabled := false;
+end;
+
+end.

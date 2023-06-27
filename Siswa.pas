@@ -83,7 +83,7 @@ end;
 
 procedure TForm3.BitBtn2Click(Sender: TObject);
 begin
-if Edit1.Text = '' then
+    if Edit1.Text = '' then
     begin
     MessageDlg('Kolom nis kelas harus diisi', mtInformation, [mbOK], 0);
     end else

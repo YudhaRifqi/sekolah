@@ -8,7 +8,9 @@ uses
   WaliKelas in 'WaliKelas.pas' {Form4},
   LaporanKelas in 'LaporanKelas.pas' {Form5},
   LaporanWaliKelas in 'LaporanWaliKelas.pas' {Form6},
-  LaporanSiswa in 'LaporanSiswa.pas' {Form7};
+  LaporanSiswa in 'LaporanSiswa.pas' {Form7},
+  OrangTua in 'OrangTua.pas' {Form8},
+  LaporanOrangTua in 'LaporanOrangTua.pas' {Form9};
 
 {$R *.res}
 
@@ -22,5 +24,7 @@ begin
   Application.CreateForm(TForm5, Form5);
   Application.CreateForm(TForm6, Form6);
   Application.CreateForm(TForm7, Form7);
+  Application.CreateForm(TForm8, Form8);
+  Application.CreateForm(TForm9, Form9);
   Application.Run;
 end.
