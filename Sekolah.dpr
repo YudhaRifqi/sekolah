@@ -10,7 +10,9 @@ uses
   LaporanWaliKelas in 'LaporanWaliKelas.pas' {Form6},
   LaporanSiswa in 'LaporanSiswa.pas' {Form7},
   OrangTua in 'OrangTua.pas' {Form8},
-  LaporanOrangTua in 'LaporanOrangTua.pas' {Form9};
+  LaporanOrangTua in 'LaporanOrangTua.pas' {Form9},
+  Poin in 'Poin.pas' {Form10},
+  LaporanPoin in 'LaporanPoin.pas' {Form11};
 
 {$R *.res}
 
@@ -26,5 +28,7 @@ begin
   Application.CreateForm(TForm7, Form7);
   Application.CreateForm(TForm8, Form8);
   Application.CreateForm(TForm9, Form9);
+  Application.CreateForm(TForm10, Form10);
+  Application.CreateForm(TForm11, Form11);
   Application.Run;
 end.

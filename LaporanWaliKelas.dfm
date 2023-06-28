@@ -15,8 +15,8 @@ object Form6: TForm6
   PixelsPerInch = 96
   TextHeight = 13
   object QuickRep1: TQuickRep
-    Left = 24
-    Top = 8
+    Left = -296
+    Top = 32
     Width = 1123
     Height = 794
     ShowingPreview = False
@@ -339,13 +339,13 @@ object Form6: TForm6
         FontSize = 12
       end
       object QRLabel9: TQRLabel
-        Left = 12
+        Left = 1
         Top = 17
         Width = 25
         Height = 20
         Size.Values = (
           52.916666666666670000
-          31.750000000000000000
+          2.645833333333333000
           44.979166666666670000
           66.145833333333330000)
         XLColumn = 0
@@ -384,13 +384,13 @@ object Form6: TForm6
       KeepOnOnePage = False
       BandType = rbDetail
       object QRDBText1: TQRDBText
-        Left = 104
+        Left = 112
         Top = 11
         Width = 41
         Height = 20
         Size.Values = (
           52.916666666666670000
-          275.166666666666700000
+          296.333333333333300000
           29.104166666666670000
           108.479166666666700000)
         XLColumn = 0
@@ -429,6 +429,162 @@ object Form6: TForm6
         Text = ''
         Transparent = False
         ExportAs = exptText
+        VerticalAlignment = tlTop
+        FontSize = 12
+      end
+      object QRDBText2: TQRDBText
+        Left = 254
+        Top = 11
+        Width = 33
+        Height = 20
+        Size.Values = (
+          52.916666666666670000
+          672.041666666666700000
+          29.104166666666670000
+          87.312500000000000000)
+        XLColumn = 0
+        XLNumFormat = nfGeneral
+        ActiveInPreview = False
+        Alignment = taLeftJustify
+        AlignToBand = False
+        Color = clWhite
+        DataSet = Form4.ZQuery1
+        DataField = 'nama'
+        Transparent = False
+        ExportAs = exptText
+        WrapStyle = BreakOnSpaces
+        FullJustify = False
+        MaxBreakChars = 0
+        VerticalAlignment = tlTop
+        FontSize = 12
+      end
+      object QRDBText3: TQRDBText
+        Left = 404
+        Top = 11
+        Width = 13
+        Height = 20
+        Size.Values = (
+          52.916666666666670000
+          1068.916666666667000000
+          29.104166666666670000
+          34.395833333333330000)
+        XLColumn = 0
+        XLNumFormat = nfGeneral
+        ActiveInPreview = False
+        Alignment = taLeftJustify
+        AlignToBand = False
+        Color = clWhite
+        DataSet = Form4.ZQuery1
+        DataField = 'jk'
+        Transparent = False
+        ExportAs = exptText
+        WrapStyle = BreakOnSpaces
+        FullJustify = False
+        MaxBreakChars = 0
+        VerticalAlignment = tlTop
+        FontSize = 12
+      end
+      object QRDBText4: TQRDBText
+        Left = 580
+        Top = 11
+        Width = 67
+        Height = 20
+        Size.Values = (
+          52.916666666666670000
+          1534.583333333333000000
+          29.104166666666670000
+          177.270833333333300000)
+        XLColumn = 0
+        XLNumFormat = nfGeneral
+        ActiveInPreview = False
+        Alignment = taLeftJustify
+        AlignToBand = False
+        Color = clWhite
+        DataSet = Form4.ZQuery1
+        DataField = 'pendidikan'
+        Transparent = False
+        ExportAs = exptText
+        WrapStyle = BreakOnSpaces
+        FullJustify = False
+        MaxBreakChars = 0
+        VerticalAlignment = tlTop
+        FontSize = 12
+      end
+      object QRDBText5: TQRDBText
+        Left = 696
+        Top = 11
+        Width = 45
+        Height = 20
+        Size.Values = (
+          52.916666666666670000
+          1841.500000000000000000
+          29.104166666666670000
+          119.062500000000000000)
+        XLColumn = 0
+        XLNumFormat = nfGeneral
+        ActiveInPreview = False
+        Alignment = taLeftJustify
+        AlignToBand = False
+        Color = clWhite
+        DataSet = Form4.ZQuery1
+        DataField = 'telepon'
+        Transparent = False
+        ExportAs = exptText
+        WrapStyle = BreakOnSpaces
+        FullJustify = False
+        MaxBreakChars = 0
+        VerticalAlignment = tlTop
+        FontSize = 12
+      end
+      object QRDBText6: TQRDBText
+        Left = 838
+        Top = 11
+        Width = 41
+        Height = 20
+        Size.Values = (
+          52.916666666666670000
+          2217.208333333333000000
+          29.104166666666670000
+          108.479166666666700000)
+        XLColumn = 0
+        XLNumFormat = nfGeneral
+        ActiveInPreview = False
+        Alignment = taLeftJustify
+        AlignToBand = False
+        Color = clWhite
+        DataSet = Form4.ZQuery1
+        DataField = 'matpel'
+        Transparent = False
+        ExportAs = exptText
+        WrapStyle = BreakOnSpaces
+        FullJustify = False
+        MaxBreakChars = 0
+        VerticalAlignment = tlTop
+        FontSize = 12
+      end
+      object QRDBText7: TQRDBText
+        Left = 978
+        Top = 11
+        Width = 40
+        Height = 20
+        Size.Values = (
+          52.916666666666670000
+          2587.625000000000000000
+          29.104166666666670000
+          105.833333333333300000)
+        XLColumn = 0
+        XLNumFormat = nfGeneral
+        ActiveInPreview = False
+        Alignment = taLeftJustify
+        AlignToBand = False
+        Color = clWhite
+        DataSet = Form4.ZQuery1
+        DataField = 'alamat'
+        Transparent = False
+        ExportAs = exptText
+        WrapStyle = BreakOnSpaces
+        FullJustify = False
+        MaxBreakChars = 0
         VerticalAlignment = tlTop
         FontSize = 12
       end

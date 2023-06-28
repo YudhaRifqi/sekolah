@@ -209,7 +209,7 @@ begin
 if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
 begin
 ZQuery1.SQL.Clear;
-ZQuery1.SQL.Add(' delete from siswa where id="'+id+'"');
+ZQuery1.SQL.Add('delete from ortu where id="'+id+'"');
 ZQuery1. ExecSQL;
 ZQuery1.SQL.Clear;
 ZQuery1.SQL.Add('select * from ortu');

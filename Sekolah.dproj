@@ -135,6 +135,14 @@
             <Form>Form9</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="Poin.pas">
+            <Form>Form10</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="LaporanPoin.pas">
+            <Form>Form11</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

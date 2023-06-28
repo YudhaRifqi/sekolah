@@ -24,8 +24,8 @@ type
     QRLabel10: TQRLabel;
     QRLabel11: TQRLabel;
     QRLabel12: TQRLabel;
-    QRSysData1: TQRSysData;
     QRDBText1: TQRDBText;
+    QRSysData1: TQRSysData;
     QRDBText2: TQRDBText;
     QRDBText3: TQRDBText;
     QRDBText4: TQRDBText;

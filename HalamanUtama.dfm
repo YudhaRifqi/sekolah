@@ -63,6 +63,10 @@ object Form1: TForm1
         Caption = 'Orang Tua'
         OnClick = OrangTua1Click
       end
+      object Poin1: TMenuItem
+        Caption = 'Poin'
+        OnClick = Poin1Click
+      end
     end
   end
   object ZConnection1: TZConnection
