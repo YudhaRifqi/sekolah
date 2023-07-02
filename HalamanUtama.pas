@@ -24,12 +24,18 @@ type
     Menu1: TMenuItem;
     Hubungan1: TMenuItem;
     Semester1: TMenuItem;
+    User1: TMenuItem;
+    Keluar1: TMenuItem;
     procedure Kelas1Click(Sender: TObject);
     procedure Siswa1Click(Sender: TObject);
     procedure WaliKelas1Click(Sender: TObject);
     procedure OrangTua1Click(Sender: TObject);
     procedure Poin1Click(Sender: TObject);
     procedure Hubungan1Click(Sender: TObject);
+    procedure User1Click(Sender: TObject);
+    procedure Keluar1Click(Sender: TObject);
+    procedure Login1Click(Sender: TObject);
+    procedure Logout1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -43,7 +49,8 @@ implementation
 
 {$R *.dfm}
 
-uses Kelas, Siswa, WaliKelas, OrangTua, LaporanOrangTua, Poin, Hubungan;
+uses Kelas, Siswa, WaliKelas, OrangTua, LaporanOrangTua, Poin, Hubungan, User,
+  Login;
 
 procedure TForm1.Hubungan1Click(Sender: TObject);
 begin
@@ -53,6 +60,28 @@ end;
 procedure TForm1.Kelas1Click(Sender: TObject);
 begin
 Form2.Show;
+end;
+
+procedure TForm1.Keluar1Click(Sender: TObject);
+begin
+if Application.MessageBox('Benarkah Anda Akan Keluar Dari Aplikasi?', 'Konfirmasi', 4+32)=6
+then Application.Terminate;
+end;
+
+procedure TForm1.Login1Click(Sender: TObject);
+begin
+Form16.Show;
+end;
+
+procedure TForm1.Logout1Click(Sender: TObject);
+begin
+if MessageDlg('Logout?', mtConfirmation, [mbYes, mbNo], 0) = mrYes then
+begin
+  Form1.Data1.Enabled := false;
+  Form1.Menu1.Enabled := false;
+  Form1.logout1.Enabled := false;
+  Form1.Login1.Enabled := true;
+end;
 end;
 
 procedure TForm1.OrangTua1Click(Sender: TObject);
@@ -68,6 +97,11 @@ end;
 procedure TForm1.Siswa1Click(Sender: TObject);
 begin
 Form3.Show;
+end;
+
+procedure TForm1.User1Click(Sender: TObject);
+begin
+Form14.Show;
 end;
 
 procedure TForm1.WaliKelas1Click(Sender: TObject);

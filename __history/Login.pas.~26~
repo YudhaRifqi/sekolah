@@ -1,0 +1,86 @@
+unit Login;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Data.DB,
+  ZAbstractRODataset, ZAbstractDataset, ZDataset;
+
+type
+  TForm16 = class(TForm)
+    Label6: TLabel;
+    Label1: TLabel;
+    Edit1: TEdit;
+    Label2: TLabel;
+    Edit2: TEdit;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    Login: TZQuery;
+    procedure BitBtn2Click(Sender: TObject);
+    procedure BitBtn1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form16: TForm16;
+
+implementation
+
+{$R *.dfm}
+
+uses HalamanUtama;
+
+procedure TForm16.BitBtn1Click(Sender: TObject);
+var
+  username, password: string;
+  ZQuery: TZQuery;
+begin
+  // Ambil nilai dari komponen TEdit username dan password
+  username := Edit1.Text;
+  password := Edit2.Text;
+
+  // Membuat objek TZQuery
+  ZQuery := TZQuery.Create(nil);
+  try
+    // Mengatur koneksi TZQuery dengan TZConnection yang telah diatur sebelumnya
+    ZQuery.Connection := Form1.ZConnection1;
+
+    // Mengeksekusi query untuk memeriksa username dan password
+    ZQuery.SQL.Text := 'SELECT COUNT(*) FROM user WHERE username = :username AND password = :password';
+    ZQuery.ParamByName('username').AsString := username;
+    ZQuery.ParamByName('password').AsString := password;
+    ZQuery.Open;
+
+    // Memeriksa hasil query
+    if ZQuery.Fields[0].AsInteger > 0 then
+    begin
+      // Jika ada record dengan username dan password yang sesuai, login berhasil
+      ShowMessage('Login berhasil!');
+      Form1.Data1.Enabled := true;
+      Form1.Menu1.Enabled := true;
+      Form1.Login1.Enabled := false;
+      // Tambahkan kode untuk membuka form utama atau aksi lainnya setelah login berhasil
+    end
+    else
+    begin
+      // Jika tidak ada record yang sesuai, login gagal
+      ShowMessage('Username atau password salah!');
+    end;
+  finally
+    // Membebaskan memori objek TZQuery
+    ZQuery.Free;
+  end;
+
+end;
+
+procedure TForm16.BitBtn2Click(Sender: TObject);
+begin
+Edit1.Clear;
+Edit2.Clear;
+end;
+
+end.

@@ -40,13 +40,21 @@ object Form1: TForm1
       Caption = 'File'
       object Login1: TMenuItem
         Caption = 'Login'
+        OnClick = Login1Click
       end
       object Logout1: TMenuItem
         Caption = 'Logout'
+        Enabled = False
+        OnClick = Logout1Click
+      end
+      object Keluar1: TMenuItem
+        Caption = 'Keluar'
+        OnClick = Keluar1Click
       end
     end
     object Data1: TMenuItem
       Caption = 'Master Data'
+      Enabled = False
       object Siswa1: TMenuItem
         Caption = 'Siswa'
         OnClick = Siswa1Click
@@ -67,9 +75,14 @@ object Form1: TForm1
         Caption = 'Poin'
         OnClick = Poin1Click
       end
+      object User1: TMenuItem
+        Caption = 'User'
+        OnClick = User1Click
+      end
     end
     object Menu1: TMenuItem
       Caption = 'Administrasi'
+      Enabled = False
       object Hubungan1: TMenuItem
         Caption = 'Hubungan'
         OnClick = Hubungan1Click

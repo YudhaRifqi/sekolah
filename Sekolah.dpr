@@ -14,7 +14,10 @@ uses
   Poin in 'Poin.pas' {Form10},
   LaporanPoin in 'LaporanPoin.pas' {Form11},
   Hubungan in 'Hubungan.pas' {Form12},
-  LaporanHubungan in 'LaporanHubungan.pas' {Form13};
+  LaporanHubungan in 'LaporanHubungan.pas' {Form13},
+  User in 'User.pas' {Form14},
+  LaporanUser in 'LaporanUser.pas' {Form15},
+  Login in 'Login.pas' {Form16};
 
 {$R *.res}
 
@@ -34,5 +37,8 @@ begin
   Application.CreateForm(TForm11, Form11);
   Application.CreateForm(TForm12, Form12);
   Application.CreateForm(TForm13, Form13);
+  Application.CreateForm(TForm14, Form14);
+  Application.CreateForm(TForm15, Form15);
+  Application.CreateForm(TForm16, Form16);
   Application.Run;
 end.
