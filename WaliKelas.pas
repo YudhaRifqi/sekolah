@@ -80,11 +80,11 @@ procedure TForm4.BitBtn2Click(Sender: TObject);
 begin
     if Edit1.Text = '' then
     begin
-    MessageDlg('Kolom nama kelas harus diisi', mtInformation, [mbOK], 0);
+    MessageDlg('Kolom nik kelas harus diisi', mtInformation, [mbOK], 0);
     end else
     if Edit2.Text = '' then
     begin
-    MessageDlg('Kolom jurusan harus diisi', mtInformation, [mbOK], 0);
+    MessageDlg('Kolom nama harus diisi', mtInformation, [mbOK], 0);
     end else
     if (RadioButton1.Checked=false) and (RadioButton2.Checked=false)then
     begin
@@ -92,19 +92,19 @@ begin
     end else
     if Edit3.Text = '' then
     begin
-    MessageDlg('Kolom jurusan harus diisi', mtInformation, [mbOK], 0);
+    MessageDlg('Kolom pendidikan harus diisi', mtInformation, [mbOK], 0);
     end else
     if Edit4.Text = '' then
     begin
-    MessageDlg('Kolom jurusan harus diisi', mtInformation, [mbOK], 0);
+    MessageDlg('Kolom telepon harus diisi', mtInformation, [mbOK], 0);
     end else
     if Edit5.Text = '' then
     begin
-    MessageDlg('Kolom jurusan harus diisi', mtInformation, [mbOK], 0);
+    MessageDlg('Kolom matpel harus diisi', mtInformation, [mbOK], 0);
     end else
     if Edit6.Text = '' then
     begin
-    MessageDlg('Kolom jurusan harus diisi', mtInformation, [mbOK], 0);
+    MessageDlg('Kolom alamat harus diisi', mtInformation, [mbOK], 0);
     end else
     begin
     ZQuery1.Append;
@@ -133,11 +133,11 @@ procedure TForm4.BitBtn3Click(Sender: TObject);
 begin
     if Edit1.Text = '' then
     begin
-    MessageDlg('Kolom nama kelas harus diisi', mtInformation, [mbOK], 0);
+    MessageDlg('Kolom nik kelas harus diisi', mtInformation, [mbOK], 0);
     end else
     if Edit2.Text = '' then
     begin
-    MessageDlg('Kolom jurusan harus diisi', mtInformation, [mbOK], 0);
+    MessageDlg('Kolom nama harus diisi', mtInformation, [mbOK], 0);
     end else
     if (RadioButton1.Checked=false) and (RadioButton2.Checked=false)then
     begin
@@ -145,19 +145,19 @@ begin
     end else
     if Edit3.Text = '' then
     begin
-    MessageDlg('Kolom jurusan harus diisi', mtInformation, [mbOK], 0);
+    MessageDlg('Kolom pendidikan harus diisi', mtInformation, [mbOK], 0);
     end else
     if Edit4.Text = '' then
     begin
-    MessageDlg('Kolom jurusan harus diisi', mtInformation, [mbOK], 0);
+    MessageDlg('Kolom telepon harus diisi', mtInformation, [mbOK], 0);
     end else
     if Edit5.Text = '' then
     begin
-    MessageDlg('Kolom jurusan harus diisi', mtInformation, [mbOK], 0);
+    MessageDlg('Kolom matpel harus diisi', mtInformation, [mbOK], 0);
     end else
     if Edit6.Text = '' then
     begin
-    MessageDlg('Kolom jurusan harus diisi', mtInformation, [mbOK], 0);
+    MessageDlg('Kolom alamat harus diisi', mtInformation, [mbOK], 0);
     end else
     if (Edit1.Text = ZQuery1.Fields[1].AsString) and (Edit2.Text = ZQuery1.Fields[2].AsString)then
     begin

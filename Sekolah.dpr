@@ -12,7 +12,9 @@ uses
   OrangTua in 'OrangTua.pas' {Form8},
   LaporanOrangTua in 'LaporanOrangTua.pas' {Form9},
   Poin in 'Poin.pas' {Form10},
-  LaporanPoin in 'LaporanPoin.pas' {Form11};
+  LaporanPoin in 'LaporanPoin.pas' {Form11},
+  Hubungan in 'Hubungan.pas' {Form12},
+  LaporanHubungan in 'LaporanHubungan.pas' {Form13};
 
 {$R *.res}
 
@@ -30,5 +32,7 @@ begin
   Application.CreateForm(TForm9, Form9);
   Application.CreateForm(TForm10, Form10);
   Application.CreateForm(TForm11, Form11);
+  Application.CreateForm(TForm12, Form12);
+  Application.CreateForm(TForm13, Form13);
   Application.Run;
 end.

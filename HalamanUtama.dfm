@@ -68,6 +68,16 @@ object Form1: TForm1
         OnClick = Poin1Click
       end
     end
+    object Menu1: TMenuItem
+      Caption = 'Administrasi'
+      object Hubungan1: TMenuItem
+        Caption = 'Hubungan'
+        OnClick = Hubungan1Click
+      end
+      object Semester1: TMenuItem
+        Caption = 'Semester'
+      end
+    end
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cCP_UTF16

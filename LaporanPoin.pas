@@ -13,6 +13,15 @@ type
     PageHeaderBand1: TQRBand;
     ColumnHeaderBand1: TQRBand;
     DetailBand1: TQRBand;
+    QRSysData1: TQRSysData;
+    QRLabel1: TQRLabel;
+    QRLabel2: TQRLabel;
+    QRLabel3: TQRLabel;
+    QRLabel4: TQRLabel;
+    QRLabel5: TQRLabel;
+    QRDBText1: TQRDBText;
+    QRDBText2: TQRDBText;
+    QRDBText3: TQRDBText;
   private
     { Private declarations }
   public

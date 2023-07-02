@@ -21,11 +21,15 @@ type
     Label1: TLabel;
     OrangTua1: TMenuItem;
     Poin1: TMenuItem;
+    Menu1: TMenuItem;
+    Hubungan1: TMenuItem;
+    Semester1: TMenuItem;
     procedure Kelas1Click(Sender: TObject);
     procedure Siswa1Click(Sender: TObject);
     procedure WaliKelas1Click(Sender: TObject);
     procedure OrangTua1Click(Sender: TObject);
     procedure Poin1Click(Sender: TObject);
+    procedure Hubungan1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -39,7 +43,12 @@ implementation
 
 {$R *.dfm}
 
-uses Kelas, Siswa, WaliKelas, OrangTua, LaporanOrangTua, Poin;
+uses Kelas, Siswa, WaliKelas, OrangTua, LaporanOrangTua, Poin, Hubungan;
+
+procedure TForm1.Hubungan1Click(Sender: TObject);
+begin
+Form12.Show;
+end;
 
 procedure TForm1.Kelas1Click(Sender: TObject);
 begin
