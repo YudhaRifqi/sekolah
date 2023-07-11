@@ -78,7 +78,6 @@ type
     procedure BitBtn4Click(Sender: TObject);
     procedure BitBtn6Click(Sender: TObject);
   private
-  SiswaList: TStringList;
     { Private declarations }
   public
     { Public declarations }
@@ -106,7 +105,6 @@ editbersih;
        BitBtn3.Enabled := false;
        BitBtn4.Enabled := false;
        BitBtn5.Enabled := true;
-       Hubungan.Append;
 end;
 
 procedure TForm12.BitBtn2Click(Sender: TObject);
@@ -196,7 +194,8 @@ ZQuery1.SQL.Clear;
 ZQuery1.SQL.Add('delete from hubungan where id="'+id+'"');
 ZQuery1. ExecSQL;
 ZQuery1.SQL.Clear;
-ZQuery1.SQL.Add('select * from hubungan');
+ZQuery1.SQL.Add('SELECT hubungan.id,  hubungan.siswa_id, siswa.nama_siswa,  hubungan.ortu_id, ortu.nama, hubungan.status_hub_anak, hubungan.keterangan, hubungan.status_ortu');
+ZQuery1.SQL.Add('from ((hubungan inner join siswa on hubungan.siswa_id = siswa.id) inner join ortu on hubungan.ortu_id = ortu.id)');
 ZQuery1.Open;
 ShowMessage('DATA BERHASIL DIHAPUS');
 posisiawal;

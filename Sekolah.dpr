@@ -17,7 +17,8 @@ uses
   LaporanHubungan in 'LaporanHubungan.pas' {Form13},
   User in 'User.pas' {Form14},
   LaporanUser in 'LaporanUser.pas' {Form15},
-  Login in 'Login.pas' {Form16};
+  Login in 'Login.pas' {Form16},
+  Semester in 'Semester.pas' {Form17};
 
 {$R *.res}
 
@@ -40,5 +41,6 @@ begin
   Application.CreateForm(TForm14, Form14);
   Application.CreateForm(TForm15, Form15);
   Application.CreateForm(TForm16, Form16);
+  Application.CreateForm(TForm17, Form17);
   Application.Run;
 end.

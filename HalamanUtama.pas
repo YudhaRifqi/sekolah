@@ -36,6 +36,7 @@ type
     procedure Keluar1Click(Sender: TObject);
     procedure Login1Click(Sender: TObject);
     procedure Logout1Click(Sender: TObject);
+    procedure Semester1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -50,7 +51,7 @@ implementation
 {$R *.dfm}
 
 uses Kelas, Siswa, WaliKelas, OrangTua, LaporanOrangTua, Poin, Hubungan, User,
-  Login;
+  Login, Semester;
 
 procedure TForm1.Hubungan1Click(Sender: TObject);
 begin
@@ -92,6 +93,11 @@ end;
 procedure TForm1.Poin1Click(Sender: TObject);
 begin
 Form10.Show;
+end;
+
+procedure TForm1.Semester1Click(Sender: TObject);
+begin
+Form17.Show;
 end;
 
 procedure TForm1.Siswa1Click(Sender: TObject);

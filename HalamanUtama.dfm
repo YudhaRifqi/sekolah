@@ -89,6 +89,7 @@ object Form1: TForm1
       end
       object Semester1: TMenuItem
         Caption = 'Semester'
+        OnClick = Semester1Click
       end
     end
   end
